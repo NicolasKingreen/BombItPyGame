@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 
 from level import Level
+from colors import MAGNOLIA
 
 
 WIN_SIZE = 640, 480
@@ -34,7 +35,7 @@ class Game:
             self.level.update(frame_time_s)
 
             # drawings
-            self.surface.fill((232, 232, 232))
+            self.surface.fill(MAGNOLIA)
             self.level.draw(self.surface)
             pygame.display.update()
 
